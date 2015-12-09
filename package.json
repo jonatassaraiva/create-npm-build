@@ -5,10 +5,10 @@
   "main": "app.js",
   "scripts": {
     "test": "mocha test -u bdd -R spec",
-    "start": "echo \"Running start\"",
+    "start": "node app.js",
+    "start:dev": "node app.js 8000",
     "restart": "echo \"Running restart\"",
-    "stop": "echo \"Running stop\"",
-    "start:dev": "echo \"Running start:dev\""
+    "stop": "echo \"Running stop\""
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,6 @@
     "should": "^8.0.0"
   },
   "dependencies": {
-    "koa": "^1.1.2"
+    "express": "^4.13.3"
   }
 }
