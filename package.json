@@ -4,7 +4,7 @@
   "description": "Create npm as a Build Tool",
   "main": "app.js",
   "scripts": {
-    "test": "mocha test -u bdd -R spec",
+    "test": "mocha tests -u bdd -R spec",
     "start": "node app.js",
     "start:dev": "node app.js 8000",
     "restart": "echo \"Running restart\"",
@@ -22,7 +22,8 @@
   "homepage": "https://github.com/jonatassaraiva/create-npm-build#readme",
   "devDependencies": {
     "mocha": "^2.3.4",
-    "should": "^8.0.0"
+    "should": "^8.0.0",
+    "supertest": "^1.1.0"
   },
   "dependencies": {
     "express": "^4.13.3"
