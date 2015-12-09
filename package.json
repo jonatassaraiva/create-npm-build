@@ -1,0 +1,27 @@
+{
+  "name": "create-npm-build",
+  "version": "1.0.0",
+  "description": "Create npm as a Build Tool",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha test -u bdd -R spec",
+    "start": "echo \"Running start\"",
+    "restart": "echo \"Running restart\"",
+    "stop": "echo \"Running stop\"",
+    "start:dev": "echo \"Running start:dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonatassaraiva/create-npm-build.git"
+  },
+  "author": "Jonatas Saraiva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonatassaraiva/create-npm-build/issues"
+  },
+  "homepage": "https://github.com/jonatassaraiva/create-npm-build#readme",
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "should": "^8.0.0"
+  }
+}
