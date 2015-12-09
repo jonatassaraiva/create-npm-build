@@ -1,6 +1,6 @@
 /* global process */
-var express = require('express');
-var app = module.exports = express();
+var express = module.exports = require('express');
+var app = express();
 
 app.get('/', function (req, res) {
 	res.send('hello world');
@@ -8,5 +8,7 @@ app.get('/', function (req, res) {
 
 var port = process.env.PORT || (process.argv[2] || 3000);
 app.listen(port, function () {
-	console.log('Running API on localhost:' + port);
+	console.log('Running server on localhost:' + port);
 });
+
+module.exports = app;

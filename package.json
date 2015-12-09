@@ -4,7 +4,7 @@
   "description": "Create npm as a Build Tool",
   "main": "app.js",
   "scripts": {
-    "test": "mocha tests -u bdd -R spec",
+    "test": "env PORT=3000 mocha tests -u bdd -R spec",
     "start": "node app.js",
     "start:dev": "node app.js 8000",
     "restart": "echo \"Running restart\"",
