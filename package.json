@@ -23,5 +23,8 @@
   "devDependencies": {
     "mocha": "^2.3.4",
     "should": "^8.0.0"
+  },
+  "dependencies": {
+    "koa": "^1.1.2"
   }
 }
