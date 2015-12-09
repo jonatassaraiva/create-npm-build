@@ -9,6 +9,11 @@ describe('Site', function () {
 		request
 			.get('/')
 			.expect('hello world')
-			.end(done());
+			.end(function (err, res) {
+				if(err)
+					done(err);
+				else
+					done();
+			});
 	});
 });
